@@ -1,0 +1,192 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #151f30;
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+.App {
+	height: 100vh;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	color: white;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+nav ul li a {
+	transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #ff0000;
+	font-size: 23px;
+}
+
+.logo {
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	margin-top: -5px;
+}
+
+/* Clear Bootstrap default hover class */
+.logo:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-btn {
+	background: none;
+	border: none;
+	color: white;
+	font-size: 29px;
+	cursor: pointer;
+	display: none; /* Initially hidden on larger screens */
+}
+
+.underlist.show {
+	left: 0; /* Show when active */
+}
+
+.underlist li {
+	margin: 10px 0;
+}
+
+.underlist a {
+	color: white;
+	text-decoration: none;
+}
+
+.display {
+	display: none;
+	font-size: 25px;
+}
+
+.show {
+	display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.menu-btn {
+		display: block; /* Show button on small screens */
+	}
+
+	.underlist {
+		list-style: none;
+		position: fixed;
+		top: 0;
+		left: -200px; /* Start hidden */
+		width: 200px;
+		height: 100vh;
+		background-color: #444;
+		padding: 20px;
+		transition: left 0.3s ease-in-out;
+	}
+}
+
+/* Btn */
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	background-color: black;
+	color: #fff;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+	background-color: rgba(0, 0, 0, 0.582);
+}
+
+/* Header */
+.header_section {
+	height: 100vh;
+}
+
+header {
+	margin-top: 100px;
+	width: 100%;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header p {
+	text-align: center;
+	margin-top: 5px;
+	font-size: 19px;
+}
+
+/* List */
+.list {
+	width: 100%;
+	height: 100vh;
+	background-color: #101010;
+	color: #fff;
+	padding-top: 10px;
+}
+
+.list {
+	padding: 30px 0;
+}
+
+.react-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+}
+
+.react-list div {
+	background-color: black;
+	padding: 40px;
+	font-size: 13px;
+	font-weight: 300;
+	border-right: 10px;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+@media (max-width: 1450px) {
+	.list {
+		height: 150vh;
+	}
+
+	.list .btn {
+		margin: auto;
+	}
+}
+
+@media (max-width: 1000px) {
+	.list {
+		height: 200vh;
+	}
+
+	.list .btn {
+		margin: auto;
+	}
+}
+
+/* Footer */
+footer {
+	padding: 20px 20px;
+}
